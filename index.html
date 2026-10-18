@@ -51,7 +51,7 @@ case 6:a=x(12,30);b=x(5,9);c=x(10,50);return[a+' × '+b+' − '+c,a*b-c];
 default:a=x(12,40);b=x(12,40);c=x(3,9);return['('+a+' + '+b+') × '+c,(a+b)*c]}}
 const esc=s=>String(s).replace(/[&<>"]/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[m]));
 const sh=a=>a.map(v=>[Math.random(),v]).sort((p,q)=>p[0]-q[0]).map(p=>p[1]);
-const API='';/* paste your Apps Script web app URL between the quotes */
+const API='https://script.google.com/macros/s/AKfycbwta3kDWFnD5ZntaOqbnIAST5z5aL7l-bd6jzfxwIwZy7t-889iFOI6LqAasQqOWHHI/exec';/* paste your Apps Script web app URL between the quotes */
 let r,t0,wrong,cur,tick,mem=[];
 function load(){try{return JSON.parse(localStorage.getItem('palace_hof')||'[]')}catch(e){return mem}}
 function store(h){mem=h;try{localStorage.setItem('palace_hof',JSON.stringify(h))}catch(e){}}
